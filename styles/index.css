@@ -24,12 +24,12 @@
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 50px; 
+    padding: 0 0; 
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top , #ff8177 0%, #ffb199 100%);
+    background-color: #ffde6c;
+    background-image: linear-gradient(to top , #ffde6c 0%, #3f3f3f 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -40,11 +40,10 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 3rem;
+    transform: translate(-100px);
 
 }
-.fa-gem {
-    margin-right: 0.5rem;
-}
+
 
 .navbar__menu{
     display: flex;
@@ -68,9 +67,16 @@
 }
 
 .navbar__links:hover{
-    color: #f77062;
+    color: #ffde6c;
     transition: all 0.3s ease;
 
+}
+
+
+@media screen and (max-width: 1300px) {
+    #navbar__logo {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -80,11 +86,56 @@
         height: 80px;
         z-index: 1;
         width: 100%;
-        max-width: 1300px;
+        max-width: 1400px;
         padding: 0;
     }
 
-    .navbar__menu {
-        
+
+    #navbar__logo {
+        transform: none;
     }
+}
+
+
+.main {
+    background-color: #131313;
+}
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 0;
+    height: 90vh;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    max-width: 13   00px;
+    padding: 0 0 0 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #3f3f3f;
+    background-image: linear-gradient(to top , #ffde6c 0%, #3f3f3f 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.main__img--container {
+    text-align: center;
+}
+#main__img {
+    height: 80%;
+    width: 80%;
 }

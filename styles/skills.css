@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 0; 
+}
+
+#navbar__logo {
+    background-color: #ffde6c;
+    background-image: linear-gradient(to top , #ffde6c 0%, #3f3f3f 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    transform: translate(-100px);
+
+}
+
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar_item {
+    height: 80px;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100;
+}
+
+.navbar__links:hover{
+    color: #ffde6c;
+    transition: all 0.3s ease;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    #navbar__logo {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1400px;
+        padding: 0;
+    }
+
+
+    #navbar__logo {
+        transform: none;
+    }
+}
+
+.main {
+    background-color: #131313;
+}
+.main__container {
+    display: grid;
+    align-items: flex-start;
+    justify-self: center;
+    margin: 0 0;
+    height: 90vh;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 1rem;
+}
