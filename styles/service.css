@@ -108,13 +108,38 @@
     background-color: #131313;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     padding: 0 50px;
 }
 
-.main__content h1 {
-    font-size: 2rem;
-    font-weight: 700;
+
+
+.main__content h1{
     color: #fff;
-    margin-top: 1rem;
+}
+
+.main__content p{
+    color: #fff;
+}
+
+.main__content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
 }
