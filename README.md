@@ -8,7 +8,7 @@ Test
 2. Project Page
 - - simple one column + description for projects
 3. Service Page
-- - simple one column + description for services
+- - ~simple one column + description for services~
 4. Skill Page
 - - 2 x 3 grid for skills + description
 
