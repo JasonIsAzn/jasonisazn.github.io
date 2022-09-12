@@ -136,6 +136,9 @@
     text-align: center;
 }
 #main__img {
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */
     height: 80%;
     width: 80%;
+    box-shadow: 12px 12px 0 #ffde6c;
 }

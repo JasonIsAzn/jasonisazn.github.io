@@ -104,11 +104,11 @@
     align-items: flex-start;
     justify-self: center;
     margin: 0 0;
-    height: 90vh;
+    height: 100vh;
     background-color: #131313;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
+    /* max-width: 1300px; */
     padding: 0 50px;
 }
 
@@ -117,4 +117,80 @@
     font-weight: 700;
     color: #fff;
     margin-top: 1rem;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ffde6c;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+
+.skill-item {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.col span{
+    position: relative;
+    left: 45%;
+    bottom: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.col {
+    flex-basis: 20%;
+    background: #131313;
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.col img{
+    border-radius: 75px;
+}
+
+
+.main__content h2 {
+    margin-top: 1.5rem;
+    color: #ffde6c;
+    font-size: 2rem;
+}
+
+.main__content p {
+    color: #fff;
+}
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+
+li {
+    color: #fff;
+}
+.more-skills-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ffde6c; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 2em;
+}
+
+.more-skills {
+    text-align: center;
+}
+.more-skills-list {
+    text-align: center;
+    font-size: 1.5rem;
 }
