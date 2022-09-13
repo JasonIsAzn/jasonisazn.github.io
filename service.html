@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
-    <link rel="stylesheet" href="styles/service.css">
+    <link id="theme" id="page_style" type="text/css" rel="stylesheet" href="styles/service.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src=myscript.js></script>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">JL</a>
@@ -24,31 +25,35 @@
                 <li class="navbar__links">
                     <a href="service.html" class="navbar__links">Services</a>
                 </li>
+                <li class="navbar__links">
+                    <a href="aboutme.html" class="navbar__links">AboutMe</a>
+                </li>
+                <button class="button" role="button" onclick="toggleTheme_service()">Switch</button>
             </ul>
         </div>
     </nav>
     <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>---service---</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <h1>Services</h1>
                 <div class="row">
                     <div class="col">
-                        <img src="imgs/london.png" alt="london">
+                        <img src="imgs/starlight.png" alt="london">
                         <div class="layer">
-                            <h3>SERVICE1</h3>
+                            <a href="https://www.starlightaggies.org/"><h3>STARLIGHT</h3></a>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="imgs/london.png" alt="london">
+                        <img src="imgs/century.jfif" alt="london">
                         <div class="layer">
-                            <h3>SERVICE2</h3>
+                            <a href="https://launch.tamu.edu/Learning-Communities/Century-Scholars"><h3 style="color: #fff;">CENTURY SCHOLAR</h3></a>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="imgs/london.png" alt="london">
+                        <img src="imgs/shpe.jpg" alt="london">
                         <div class="layer">
-                            <h3>SERVICE3</h3>
+                            <h3 style="color: #fff;">SHPE Volunteer</h3>
+                            <a href="https://www.tamushpe.org/"><h3 style="color: #fff;">SHPE Volunteer</h3></a>
                         </div>
                     </div>
                     

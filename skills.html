@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    <link rel="stylesheet" href="styles/skills.css">
+    <link id="theme" id="page_style" type="text/css" rel="stylesheet" href="styles/skills.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src=myscript.js></script>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">JL</a>
@@ -29,6 +30,10 @@
                 <li class="navbar__links">
                     <a href="service.html" class="navbar__links">Services</a>
                 </li>
+                <li class="navbar__links">
+                    <a href="aboutme.html" class="navbar__links">AboutMe</a>
+                </li>
+                <button class="button" role="button" onclick="toggleTheme_skills()">Switch</button>
             </ul>
         </div>
     </nav>
@@ -36,13 +41,12 @@
     <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>---Skills---</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h1>Skills</h1>
                 <div class="row">
                     <div class="col">
                         <span class="dot"></span>
-                        <img src="imgs/python.jfif" alt="python">
-                        <h3 class="skill-item">Python</h3>
+                        <img src="imgs/cpp.jfif" alt="c++">
+                        <h3 class="skill-item">C++</h3>
                     </div>
                     
                     <div class="col">
@@ -53,25 +57,25 @@
 
                     <div class="col">
                         <span class="dot"></span>
-                        <img src="imgs/python.jfif" alt="python">
-                        <h3 class="skill-item">Python</h3>
+                        <img src="imgs/java.png" alt="java">
+                        <h3 class="skill-item">Java</h3>
                     </div>
 
                     <div class="col">
                         <span class="dot"></span>
-                        <img src="imgs/python.jfif" alt="python">
-                        <h3 class="skill-item">Python</h3>
+                        <img src="imgs/html.png" alt="html">
+                        <h3 class="skill-item">Web Development</h3>
                     </div>                    
                 </div>
                 
                 <h2 class="more-skills">More Skills</h3>
                 <ul class="more-skills-list">
-                    <li>Skill1</li>
-                    <li>Skill2</li>
-                    <li>Skill3</li>
-                    <li>Skill4</li>
-                    <li>Skill5</li>
-                    <li>Skill6</li>
+                    <li>Problem Solving</li>
+                    <li>Learning</li>
+                    <li>LaTeX</li>
+                    <li>Haskell</li>
+                    <li>RStudio</li>
+                    <li>SQL</li>
                 </ul>
 
 

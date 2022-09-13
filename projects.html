@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="styles/projects.css">
+    <link id="theme" id="page_style" type="text/css" rel="stylesheet" href="styles/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src=myscript.js></script>
     <nav class="navbar">
         <div class="navbar__container">
             <a href="index.html" id="navbar__logo">JL</a>
@@ -29,30 +30,33 @@
                 <li class="navbar__links">
                     <a href="service.html" class="navbar__links">Services</a>
                 </li>
+                <li class="navbar__links">
+                    <a href="aboutme.html" class="navbar__links">AboutMe</a>
+                </li>
+                <button class="button" role="button" onclick="toggleTheme_project()">Switch</button>
             </ul>
         </div>
     </nav>
     <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>---Projects---</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h1>Projects</h1>
                 
                 <div class="row">
                     <div class="col">
-                        <h3><a href="https://www.instagram.com/thereal.jle/">Projet1</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui sed saepe ad quia magnam iusto nulla nam ipsa, ducimus illo eius ullam sequi officiis quis tempore deleniti ea sunt eveniet, voluptatum odio voluptatibus perspiciatis? Blanditiis pariatur a doloribus fuga ex. Excepturi quaerat eaque necessitatibus porro, quas nesciunt iusto fugit?</p>
-                        <img src="imgs/tower.jpg" alt="tower"class="project-image" >
+                        <h3><a href="https://www.instagram.com/thereal.jle/">Billy Discord Bot</a></h3>
+                        <p>Billy Discord Bot is a personal Discord Bot written in Python. When playing League of Legends, information is critical to gaining an advantage on your opponent. This bot's main function is to provide user with information about League of Legends whether it's simple profile information to live in-game statistics. This project first started with using web scraping to obtain data, but throughout the project I realized this form of data gather was slow. While web scraping is useful I believe I need something else. This was when I first learned about RIOT API, which is an interface that allow me to directly use RIOT GAMES database with some limitations. I continued to learn by using REDDIT API, replit databases and overall improving my coding skill This discord bot also provide other function such as obtaining the latest news, memes, anime, and any addition functions that members of the discord suggest.</p>
+                        <img src="imgs/discord_bot.png" alt="discord bot logo"class="project-image" >
                     </div>
                     <div class="col">
-                        <h3><a href="https://www.instagram.com/thereal.jle/">Projet2</a></h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam asperiores delectus necessitatibus provident expedita! Quae ipsa modi maxime doloribus veniam! Repellendus perferendis laboriosam facilis molestiae qui, mollitia ex sint corporis nihil magnam, vero accusantium at blanditiis nulla reprehenderit eaque nostrum ducimus cupiditate labore. Saepe cupiditate, velit quia iste mollitia nihil!</p>
-                        <img src="imgs/tower.jpg" alt="tower" class="project-image" >
+                        <h3><a href="https://www.instagram.com/thereal.jle/">Sypha</a></h3>
+                        <p>Sypha is a program that turns a lot of things I have personally learned throughout my college career into code. One of my favorite topics in school is Math and there are many concepts in Math that can be turned into code such as a calculator, but there are also many concepts in Math that work well because of the advent of the computer. My goal for this program is to turn these concepts into code. Some example of the program function is from calculus with a limit,derative, and graphing calculator. While other concepts invovles classical cryptograhy such as hill cipher, which involves decoding and coding a messsage. This involves coding a matrix manipulation, eigenvalues, and basic matrix operations.</p>
+                        <img src="imgs/math_code.jpg" alt="math pi symbol" class="project-image" >
                     </div>
                     <div class="col">
-                        <h3><a href="https://www.instagram.com/thereal.jle/">Projet3</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis perferendis molestiae beatae libero blanditiis mollitia quia fuga ad, aliquam magnam voluptatem animi. Ipsa porro quos possimus illum eius a dolorum cumque delectus impedit officia placeat sapiente blanditiis, maiores soluta atque ex voluptates. Tempora soluta eos voluptates deleniti, quis eaque omnis?</p>
-                        <img src="imgs/tower.jpg" alt="tower" class="project-image" >
+                        <h3><a href="https://www.instagram.com/thereal.jle/">Python101 Course</a></h3>
+                        <p>I'm a currently a PT for a engineering course at Texas A&M called ENGR 102. This course is an introduction to python. I'm making my personal course based of Fundamentals of Python 3 by Richard L. Halterman. The course will go based on each chapter of the book. In addition to a lecture style recorded video, there will be try-it yourself assignment tagged along with a video, and projects throughout the course for a strong understanding of each concepts. My goal for this project is to get out of my comfort zone by teachings a whole course and also learn ways to teach better. In addition to this, I can also learn small details about python that I normally wouldn't know. </p>
+                        <img src="imgs/python_logo_1.png" alt="python logo" class="project-image" >
                     </div>
                 </div>
 

@@ -9,8 +9,9 @@ Test
 - - ~Use a different image~
 - - ~add shadow behind image~
 2. Project Page
-- - reformat title
-- - 
+- - reformat title/subtitle
+- - fill in placeholders
+- - simple redesign
 3. Service Page
 - - reformat title
 4. Skill Page

@@ -6,7 +6,7 @@
 }
 
 .navbar {
-    background: #131313;
+    background: #c8b88a;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -28,8 +28,8 @@
 }
 
 #navbar__logo {
-    background-color: #ffde6c;
-    background-image: linear-gradient(to top , #ffde6c 0%, #3f3f3f 100%);
+    background-color: #86b049;
+    background-image: linear-gradient(to top , #86b049 0%, #3f3f3f 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -57,7 +57,7 @@
 }
 
 .navbar__links{
-    color: #fff;
+    color: #476930;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .navbar__links:hover{
-    color: #ffde6c;
+    color: #86b049;
     transition: all 0.3s ease;
 
 }
@@ -95,8 +95,9 @@
         transform: none;
     }
 }
+
 .button {
-    background-color: #ffde6c;
+    background-color: #86b049;
     border-radius: 12px;
     color: #000;
     cursor: pointer;
@@ -116,7 +117,7 @@
   .button:not(:disabled):hover,
   .button:not(:disabled):focus {
     outline: 0;
-    background: #ffde6c;
+    background: #86b049;
     box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
   }
   
@@ -127,47 +128,84 @@
   }
   
 .main {
-    background-color: #131313;
+    background-color: #c8b88a;
 }
 .main__container {
     display: grid;
     align-items: flex-start;
     justify-self: center;
     margin: 0 0;
-    height: 90vh;
-    background-color: #131313;
+    height: 100vh;
+    background-color: #c8b88a;
     z-index: 1;
     width: 100%;
     /* max-width: 1300px; */
     padding: 0 50px;
 }
 
-
-
-.main__content h1{
-    color: #fff;
+.main__content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #476930;
+    margin-top: 1rem;
 }
 
-.main__content p{
-    color: #fff;
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #86b049;
+    border-radius: 50%;
+    display: inline-block;
+    
 }
 
-.main__content {
-    width: 80%;
-    margin: auto;
+.skill-item {
     text-align: center;
-    padding-top: 50px;
+    font-size: 2rem;
+}
+
+.col span{
+    position: relative;
+    left: 45%;
+    bottom: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #476930;
+}
+
+.col {
+    flex-basis: 20%;
+    background: #c8b88a;
+    border-radius: 10px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+}
+
+.col img{
+    border-radius: 75px;
+}
+
+
+.main__content h2 {
+    margin-top: 1.5rem;
+    color: #86b049;
+    font-size: 2rem;
 }
 
 .main__content h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: #476930;
     margin-top: 1rem;
     font-family: sans-serif;
     max-width: 400px;
     position: relative;
-    margin: auto;
+    text-align: center;
 }
 
 .main__content h1:before {
@@ -175,7 +213,7 @@
     display: block;
     width: 120px;
     height: 2px;
-    background: #fff;
+    background: #476930;
     position: absolute;
     left: 0;
     top: 50%;
@@ -186,50 +224,34 @@
     display: block;
     width: 120px;
     height: 2px;
-    background: #fff;
+    background: #476930;
     position: absolute;
     right: 0;
     top: 50%;
 }
 
 
-.row {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
+ul {
+    list-style: none; /* Remove default bullets */
 }
 
-.col {
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    position: relative;
-    overflow: hidden;
+li {
+    color: #476930;
+}
+.more-skills-list li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #86b049; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    font-size: 2em;
 }
 
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+.more-skills {
+    text-align: center;
 }
-
-
-.layer:hover {
-    background: rgba(225,222,108,0.7);
-}
-
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: #000;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
+.more-skills-list {
+    text-align: center;
+    font-size: 1.5rem;
 }
